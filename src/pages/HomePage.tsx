@@ -1,3 +1,5 @@
+import ImageSlide from '../components/ImageSlide';
+
 export default function HomePage() {
 	return (
 		<main className="bg-white text-gray-800 font-sans">
@@ -10,6 +12,8 @@ export default function HomePage() {
 			<section>
 				<img src="https://kr.object.ncloudstorage.com/gandi-cdn/sample/hotel1.jpeg" alt="호텔 전경" className="w-full h-48 object-cover" />
 			</section>
+
+			<ImageSlide />
 
 			<section className="p-6">
 				<h2 className="text-xl font-bold mb-2">호텔 소개</h2>
