@@ -11,7 +11,7 @@ export default function LocationSection() {
 
 	const onClickKakaoMap = () => {
 		window.open(
-			`https://map.kakao.com/link/map/${HOTEL_NAME},37.1275561880418,128.21896436965`,
+			`https://map.kakao.com/link/search/${HOTEL_NAME}`,
 			'_blank'
 		);
 	};
