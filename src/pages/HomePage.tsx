@@ -1,16 +1,14 @@
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import ImageSlide from '../components/ImageSlide';
 import KaKaoMap from '../components/KaKaoMap';
 
-const HOTEL_NAME = 'BROWN DOT HOTEL';
+export const HOTEL_NAME = '브라운도트 제천화산점';
 
 export default function HomePage() {
 	return (
 		<main className="bg-white text-gray-800 font-sans">
-
-			<header className="bg-[#5D4037] text-white p-4">
-				<h1 className="text-2xl font-bold">{HOTEL_NAME}</h1>
-				<p className="text-sm">도심 속 조용한 쉼터</p>
-			</header>
+			<Header />
 
 			<section>
 				<img src="https://kr.object.ncloudstorage.com/gandi-cdn/sample/hotel1.jpeg" alt="호텔 전경" className="w-full h-48 object-cover" />
@@ -52,7 +50,7 @@ export default function HomePage() {
 
 			<section className="p-6 bg-gray-50">
 				<h2 className="text-xl font-bold mb-2">위치</h2>
-				<p className="mb-2 text-gray-700">충북 제천시 내토로 566</p>
+				<p className="mb-2 text-gray-700">충북 제천시 내토로 566 {HOTEL_NAME}</p>
 				<KaKaoMap />
 			</section>
 
@@ -60,14 +58,10 @@ export default function HomePage() {
 				<h2 className="text-xl font-bold mb-2">예약 및 문의</h2>
 				<p className="text-gray-700">전화: 02-123-4567</p>
 				<p className="text-gray-700">이메일: hotel@example.com</p>
-				<a href="#" className="inline-block mt-4 bg-[#5D4037] text-white px-4 py-2 rounded">지금 예약하기</a>
+				{/* <a href="#" className="inline-block mt-4 bg-[#5D4037] text-white px-4 py-2 rounded">지금 예약하기</a> */}
 			</section>
 
-			<footer className="bg-[#5D4037] text-center text-sm p-4 text-white">
-				<p>&copy; {HOTEL_NAME}</p>
-				<p>All rights reserved</p>
-			</footer>
-
+			<Footer />
 		</main>
 	);
 }
