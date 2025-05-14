@@ -1,9 +1,11 @@
+import CustomCalendar from '../components/CustomCalendar';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ImageSlide from '../components/ImageSlide';
-import KaKaoMap from '../components/KaKaoMap';
+import LocationSection from '../components/LocationSection';
 
 export const HOTEL_NAME = '브라운도트 제천화산점';
+export const HOTEL_ADDRESS = '충북 제천시 내토로 566';
 
 export default function HomePage() {
 	return (
@@ -48,15 +50,13 @@ export default function HomePage() {
 				</ul>
 			</section>
 
-			<section className="p-6 bg-gray-50">
-				<h2 className="text-xl font-bold mb-2">위치</h2>
-				<p className="mb-2 text-gray-700">충북 제천시 내토로 566 {HOTEL_NAME}</p>
-				<KaKaoMap />
-			</section>
+			<LocationSection />
+
+			<CustomCalendar />
 
 			<section className="p-6">
 				<h2 className="text-xl font-bold mb-2">예약 및 문의</h2>
-				<p className="text-gray-700">전화: 02-123-4567</p>
+				<p className="text-gray-700">전화: 0503-7152-4325</p>
 				<p className="text-gray-700">이메일: hotel@example.com</p>
 				{/* <a href="#" className="inline-block mt-4 bg-[#5D4037] text-white px-4 py-2 rounded">지금 예약하기</a> */}
 			</section>

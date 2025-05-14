@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.react-calendar {
+  @apply border-0 shadow-none;
+}
+
+.react-calendar__tile {
+  @apply border-0;
+}
+
+.react-calendar__tile--now {
+  @apply bg-white; /* 오늘 날짜 (now) */
+}
+
+.react-calendar__tile--active {
+  @apply bg-blue-700 text-white; /* 선택된 날짜 (active) */
+}
