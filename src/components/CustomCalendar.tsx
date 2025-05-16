@@ -7,7 +7,7 @@ type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
 export default function CustomCalendar() {
-	const [value, onChange] = useState<Value>(new Date(2025, 5, 1));
+	const [value, onChange] = useState<Value>(new Date(2025, 4, 30));
 
 	return (
 		<div className='w-full flex justify-center items-center mt-2'>

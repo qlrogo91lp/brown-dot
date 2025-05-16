@@ -1,7 +1,7 @@
-import ImageGallery from "react-image-gallery";
+import ImageGallery, { type ReactImageGalleryItem } from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const images = Array.from({ length: 11 }, (_, i) => {
+const samples = Array.from({ length: 11 }, (_, i) => {
 	const index = i + 1;
 	return {
 		original: `/samples/${index}.jpg`,
@@ -9,13 +9,19 @@ const images = Array.from({ length: 11 }, (_, i) => {
 	};
 });
 
-export default function ImageSlide() {
+interface ImageSlideProps {
+	images?: ReactImageGalleryItem[];
+	onThumbnail?: boolean;
+}
+
+export default function ImageSlide({ images, onThumbnail = false }: ImageSlideProps) {
 	return (
 		<ImageGallery
 			autoPlay
 			showPlayButton={false}
 			showFullscreenButton={false}
-			items={images}
+			showThumbnails={onThumbnail}
+			items={images ?? samples}
 		/>
 	);
 }
