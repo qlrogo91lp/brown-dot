@@ -42,7 +42,6 @@ export const standard: ReactImageGalleryItem[] = [
   { original: '/images/room/standard/HCJ-4.jpg' },
   { original: '/images/room/standard/HCJ-5.jpg' },
   { original: '/images/room/standard/HCJ-6.jpg' },
-  { original: '/images/room/standard/HCJ-7.jpg' },
 ];
 
 export const suite: ReactImageGalleryItem[] = [
