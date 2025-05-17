@@ -11,41 +11,43 @@ const CONTENT_ARRAY = [
 
 export default function OpenningMessage() {
 	return (
-		<section className="max-w-2xl p-6 m-4 bg-white rounded-lg shadow">
-			<header className="mb-6 text-center">
-				<h1 className="text-xl font-bold text-primary-700">인사말</h1>
-			</header>
-			<article className="space-y-4 leading-relaxed text-gray-800 text-md">
-				{CONTENT_ARRAY.map((content, index) => (
+		<section className="w-full mx-auto">
+			<div className='max-w-2xl p-6 m-4 rounded-lg shadow'>
+				<header className="mb-6 text-center">
+					<h1 className="text-xl font-bold text-primary-700">인사말</h1>
+				</header>
+				<article className="space-y-4 leading-relaxed text-gray-800 text-md">
+					{CONTENT_ARRAY.map((content, index) => (
+						<motion.p
+							key={index}
+							initial={{ opacity: 0, y: 10 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true, amount: 0.6 }}
+							transition={{ delay: index * 0.2 + 0.2, duration: 0.5 }}
+						>
+							{content}
+						</motion.p>
+					))}
 					<motion.p
-						key={index}
+						className="mt-6 text-base text-right text-gray-500"
 						initial={{ opacity: 0, y: 10 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true, amount: 0.6 }}
-						transition={{ delay: index * 0.2 + 0.2, duration: 0.5 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ delay: 1.7, duration: 0.5 }}
 					>
-						{content}
+						대표이사 김 희 택 올림
 					</motion.p>
-				))}
-				<motion.p
-					className="mt-6 text-base text-right text-gray-500"
-					initial={{ opacity: 0, y: 10 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 1.7, duration: 0.5 }}
-				>
-					대표이사 김 희 택 올림
-				</motion.p>
-			</article>
-			<footer className="pt-6 mt-8 border-t">
-				<dl className="grid [grid-template-columns:1fr_2fr] gap-x-2 gap-y-2 text-gray-700 mb-4">
-					<dt className="font-semibold">프리오픈</dt>
-					<dd>2025년 5월 20일</dd>
-					<dt className="font-semibold">정식오픈</dt>
-					<dd>2025년 5월 30일 (오후2시)</dd>
-					<dt className="font-semibold">장소</dt>
-					<dd>제천시 화산동 986 브라운도트 제천화산점</dd>
-				</dl>
-			</footer>
+				</article>
+				<footer className="pt-6 mt-8 border-t">
+					<dl className="grid [grid-template-columns:1fr_2fr] gap-x-2 gap-y-2 text-gray-700 mb-4">
+						<dt className="font-semibold">프리오픈</dt>
+						<dd>2025년 5월 20일</dd>
+						<dt className="font-semibold">정식오픈</dt>
+						<dd>2025년 5월 30일 (오후2시)</dd>
+						<dt className="font-semibold">장소</dt>
+						<dd>제천시 화산동 986 브라운도트 제천화산점</dd>
+					</dl>
+				</footer>
+			</div>
 		</section>
 	);
 }

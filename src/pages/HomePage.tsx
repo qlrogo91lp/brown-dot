@@ -1,5 +1,6 @@
 import AmenitiesInfo from '../components/AmenitiesInfo';
 import Aside from '../components/Aside';
+import CustomImage from '../components/CusotmImage';
 import CustomCalendar from '../components/CustomCalendar';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -17,10 +18,11 @@ export const HOTEL_EMAIL = 'songhawood@naver.com';
 
 export default function HomePage() {
 	return (
-		<main className="bg-white text-gray-800 font-sans">
+		<main className="max-w-[490px] mx-auto bg-white wtext-gray-800">
 			<Header />
 			<ImageSlide images={exteriors}/>
 			<OpenningMessage />
+			<CustomImage imagePath='/images/nightview/night2.jpg' />
 			<Introduction />
 			<RoomInfoSection />
 			<AmenitiesInfo />
