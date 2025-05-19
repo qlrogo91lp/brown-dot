@@ -39,9 +39,9 @@ export default function OpenningMessage() {
 				</article>
 				<footer className="pt-6 mt-8 border-t">
 					<dl className="grid [grid-template-columns:1fr_2fr] gap-x-2 gap-y-2 text-gray-700 mb-4">
-						<dt className="font-semibold">프리오픈</dt>
-						<dd>2025년 5월 20일</dd>
-						<dt className="font-semibold">정식오픈</dt>
+						<dt className="font-semibold">프리 오픈</dt>
+						<dd>2025년 5월 21일</dd>
+						<dt className="font-semibold">그랜드 오픈</dt>
 						<dd>2025년 5월 30일 (오후2시)</dd>
 						<dt className="font-semibold">장소</dt>
 						<dd>제천시 화산동 986 브라운도트 제천화산점</dd>
