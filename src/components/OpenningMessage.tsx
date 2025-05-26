@@ -42,7 +42,7 @@ export default function OpenningMessage() {
 						<dt className="font-semibold">프리 오픈</dt>
 						<dd>2025년 5월 21일</dd>
 						<dt className="font-semibold">그랜드 오픈</dt>
-						<dd>2025년 5월 30일 (오후2시)</dd>
+						<dd>2025년 5월 30일 (오후 12시)</dd>
 						<dt className="font-semibold">장소</dt>
 						<dd>제천시 화산동 986 브라운도트 제천화산점</dd>
 					</dl>
